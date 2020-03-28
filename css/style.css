@@ -1,0 +1,138 @@
+/* General styles*/
+body {
+    font-family: lucida Sans;
+}
+
+.sections{
+padding: 20px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    
+}
+
+header {
+    height: auto;
+    padding: 10px 0 ;
+    position: fixed;
+    z-index: 999;
+    margin-left: 50px;
+}
+
+header i.icon{
+    position: absolute;
+    right: 10px;
+    top: 34px;
+    z-index: 10px;
+    display: none;
+    color: aliceblue;
+    
+}
+
+header .logo h2 {
+    font-size: 35px;
+    color: aliceblue;
+   
+}
+
+
+header nav .nav-list {
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    
+}
+ 
+header nav .nav-list .list a{
+    display: block;
+    padding: 15px 0;
+    margin: 9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: aliceblue;
+
+    
+}   
+ 
+header nav .nav-list .list a:hover{
+    color:#7cb62f;
+}
+@media (max-width:575px){
+    header nav .nav-list{
+        display: none;
+        text-align:  center;
+        padding: 0;
+    
+                }
+    header .logo{
+        text-align: center;
+    }
+    header i.icon{ 
+        display: block;
+    }  
+}
+/* homme seciton*/
+.home{
+    height: 700px;
+    background-image:url('../images/home/petrol.jpg');
+    background-size:cover;
+    background-position: center;
+    position: relative;
+
+}
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    
+}
+.home .home-title{
+    color: aliceblue;
+    font-size: 45px;
+    margin-bottom: 20px;
+    
+}
+.home .home-desc{
+    color: aliceblue;
+    font-size: 20px;
+}
+.home .home-button{
+    background:#7cb62f;
+    color: aliceblue;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0 ;
+}
+
+@media (max-width:575px){
+    .home .home-title{
+        font-size: 20px;
+    }
+}
+
+.home .home-button{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
