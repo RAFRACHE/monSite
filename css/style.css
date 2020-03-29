@@ -1,138 +1,275 @@
 /* General styles*/
+
 body {
     font-family: lucida Sans;
 }
 
-.sections{
-padding: 20px 0;
+.sections {
+    padding: 20px 0;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
-    
+    background: rgba(0, 0, 0, 0.5);
 }
+
+
+/* about us*/
+
+.sections-title {
+    font-size: 40px;
+}
+
+.line {
+    width: 200px;
+    background: #ddd;
+}
+
+
+/* about us*/
+
+.section-header .section-title {
+    font-size: 40px;
+}
+
+.section-header .line {
+    width: 150px;
+    background: #ddd;
+    height: 3px;
+    margin: auto;
+}
+
+.section-header .line span {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: chartreuse;
+    margin: auto;
+    position: relative;
+}
+
+.section-header p {
+    width: 500px;
+    color: #888;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+
+/* About us*/
+
+
+/* header */
 
 header {
     height: auto;
-    padding: 10px 0 ;
+    padding: 10px 0;
     position: fixed;
+    width: 100%;
     z-index: 999;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 
-header i.icon{
+header i.icon {
     position: absolute;
     right: 10px;
     top: 34px;
     z-index: 10px;
     display: none;
     color: aliceblue;
-    
 }
 
 header .logo h2 {
     font-size: 35px;
     color: aliceblue;
-   
 }
-
 
 header nav .nav-list {
     display: inline-block;
     display: flex;
     justify-content: space-around;
     margin-bottom: 0;
-    
 }
- 
-header nav .nav-list .list a{
+
+header nav .nav-list .list a {
     display: block;
     padding: 15px 0;
     margin: 9px 0;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    color: aliceblue;
+    color: #fff;
+}
 
-    
-}   
- 
-header nav .nav-list .list a:hover{
-    color:#7cb62f;
+header nav .nav-list .list a:hover {
+    color: #7cb62f;
 }
-@media (max-width:575px){
-    header nav .nav-list{
-        display: none;
-        text-align:  center;
-        padding: 0;
-    
-                }
-    header .logo{
-        text-align: center;
+
+.sticky {
+    background: #000;
+    color: #FFF;
+}
+
+.stickyTxt {
+    color: black;
+}
+
+@media (max-width:575px) {
+    header {
+        background: #FFD700;
     }
-    header i.icon{ 
+    header nav .nav-list {
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header .logo {
+        text-align: center;
+        /*padding-right: 250px;*/
+    }
+    header i.icon {
         display: block;
-    }  
+    }
+    .section-header p {
+        width: 85%;
+    }
 }
+
+
 /* homme seciton*/
-.home{
-    height: 700px;
-    background-image:url('../images/home/petrol.jpg');
-    background-size:cover;
+
+.home {
+    height: 800px;
+    background-image: url('../images/home/petrol.jpg');
+    background-size: cover;
     background-position: center;
     position: relative;
-
 }
-.home .home-content{
+
+.home .home-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50% );
-    
+    transform: translate(-50%, -50%);
 }
-.home .home-title{
+
+.home .home-title {
     color: aliceblue;
     font-size: 45px;
     margin-bottom: 20px;
-    
 }
-.home .home-desc{
+
+.home .home-desc {
     color: aliceblue;
     font-size: 20px;
 }
-.home .home-button{
-    background:#7cb62f;
+
+.home .home-button {
+    background: #7cb62f;
     color: aliceblue;
     width: 150px;
     text-align: center;
-    padding: 10px 0 ;
+    padding: 10px 0;
 }
 
-@media (max-width:575px){
-    .home .home-title{
+@media (max-width:575px) {
+    .home .home-title {
         font-size: 20px;
     }
 }
 
-.home .home-button{
+.home .home-button {
     margin-bottom: 10px;
 }
 
 
+/* About Us*/
+
+.about .about-info h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.about .about-info h3 span {
+    color: #7cb62f;
+}
+
+.about .about-info .about-info-desc {
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.about .about-info .about-info-btn {
+    background-color: #7cb62f;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    /* text en grad*/
+    margin-bottom: 15px;
+}
+
+.about .about-img img {
+    width: 50%;
+}
+
+@media(max-width:575pox) {
+    .about .about-info h3 {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:576px) and (max-width:768px) {
+    .about .about-info {
+        text-align: center;
+    }
+}
 
 
+/* services section*/
+
+.services {
+    background: #f7f7f7;
+}
+
+.services .serv {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* pour centrer le contenu de div*/
+}
+
+.services .serv .icon {
+    background: chartreuse;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.services .serv-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.services .serv-desc {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 16px;
+}
 
 
+/* pour le dev*/
 
-
-
-
-
-
-
-
-
+.test {
+    margin-bottom: 400px;
+}
